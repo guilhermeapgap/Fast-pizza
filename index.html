@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>  fast pizza</title>
+    <link rel="shortcut icon" href="Imagens/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="fast_pizaa.css">
+
+</head>
+<body>
+    <header>
+    <!-----------------------
+     navegação hamburquer
+    ------------------------>
+    <nav class="navbar navbar-expand-md navbar-dark space-nav nav_principal">
+        
+    <!-- Logo -->
+      <p class="nav_p nav_logo"><img src="Imagens/stevepizza_png.png" alt="steve pizza" class="steve_pizza" ><a href="index.html" class="a_logo">Fast Pizza</a></p>
+      
+    <!-- Menu Hamburguer -->
+      <button class="navbar-toggler" data-toggle="collapse" data-target="#navegacao">
+      <span class="navbar-toggler-icon"></span>
+      </button>
+    <!-- navegacao -->
+      <div class="collapse navbar-collapse links_header" id="navegacao">
+        <ul class="navbar-nav ml-auto d-flex mr-auto justify-content-center align-items-center flex-row">
+          <li class="nav-item">
+            <a href="cardapio.html" class="nav-link text-light">Cardapio</a>
+          </li>
+          <li class="nav-item">
+            <a href="https://www.google.com/maps/place/Valparaíso+de+Goiás,+GO/@-16.0898164,-48.0200443,13z/data=!3m1!4b1!4m5!3m4!1s0x9359847212701563:0x4215e06987627415!8m2!3d-16.0753576!4d-47.9860661" class="nav-link text-light" target="_blank">Localização</a>
+          </li>
+          <!------------------------------------------
+                        POP UP contatatos 
+          -------------------------------------------->
+          <li class="nav-item">
+            <!-- Botão para acionar modal -->
+            <button type="button" class="btn text-white btn_contatos" data-toggle="modal" data-target="#ExemploModalCentralizado">
+              Contatos
+            </button>
+
+            <!-- Modal -->
+            <div class="modal fade" id="ExemploModalCentralizado" tabindex="-1" role="dialog" aria-labelledby="TituloModalCentralizado" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered " role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title text-dark" id="TituloModalCentralizado">Contatos</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body d-flex flex-column align-items-center">
+                    <!-- conteudo principal do POP -->
+                    <div class="footer_sociais"> 
+                      <a href="https://www.instagram.com" class="text-decoration-none">
+                        <img src="icones/instagram_black.png" alt="instagram" class="icons_pop_social">
+                      </a>
+                      <a href="https://www.whatsapp.com/?lang=pt_br" class="text-decoration-none">
+                        <img src="icones/whatsapp_preto.png" alt="whatsapp" class="icons_pop_social">
+                      </a>
+                      <a href="https://twitter.com" class="text-decoration-none"> <img src="icones/twitter_blaack.png" alt="twitter" class="icons_pop_social">
+                      </a>
+                      <img src="icones/telefone_blaack.png" class="icons_pop_social"data-container="body" data-toggle="popover" data-placement="bottom" data-content="+55 61 99999-9999">
+                      
+                    </div>
+                    <p class="text-dark p_footer">Fast pizza</p>
+
+                    
+                  </div>
+                  
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Fechar</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>  
+        </ul>
+        <div class="d-flex flex-column align-items-center phone">
+          <p class="nav_telefone">Telefone</p>
+          <p class="nav_num_telefone">+55 (61) 8119-9979</p>
+        </div>
+      </div>                         
+    </nav>
+    
+    <div  class="d-flex justify-content-center">
+      <a href="cardapio.html" class="d-flex align-items-center org_icons_menu">
+        <img src="Imagens/ico_png.png" alt="pizza png" class="icon_foods">
+        <p>Pizza</p>
+      </a>
+      <a href="fritas.html" class="d-flex align-items-center org_icons_menu">
+        <img src="Imagens/fries_png.png" alt="fries" class="icon_foods_fries">
+        <p>Batata frita</p>
+      </a>
+      <a href="drinks.html" class="d-flex align-items-center org_icons_menu">
+        <img src="Imagens/white_drink.png" alt="bebedas" class="icon_foods">
+        <p>Bebidas</p>
+      </a>  
+    </div> 
+    <!-- icones: https://flaticons.net/search.php?search=food -->
+   <!-----------------------
+   fim navegação hamburquer
+   ------------------------->
+    </header>
+    
+    <main>
+        <!-- carousel -->
+        
+        <div class="d-flex justify-content-center">
+            <div id="carouselExampleIndicators" class="carousel slide carousel_imagens" data-ride="carousel">
+                <ol class="carousel-indicators">
+                  <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                  <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                  <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img class="d-block w-100 img_carousel" src="Imagens/img-carousel/pizza_slide_1.jpg" alt="Primeiro Slide">
+                    <div class="d-flex justify-content-center align-items-center">
+                      <label class="txt_corousel txt_corousel_01">Pizza tradicional<p class="p1_carousel">Italiana!</p></label> </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img class="d-block w-100 img_carousel" src="Imagens/img-carousel/pizza_slide_2.jpg" alt="Segundo Slide">
+                    <div class="d-flex justify-content-center align-items-center">
+                      <label class="txt_corousel"> Pizza para familia</label> 
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img class="d-block w-100 img_carousel" src="Imagens/img-carousel/pizza_slide_3.jpg" alt="Terceiro Slide">
+                    <div class="d-flex justify-content-center align-items-center">
+                      <label class="txt_corousel"> Pizza Calabresa</label>
+                    </div> 
+                  </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Anterior</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Próximo</span>
+                </a>
+              </div>
+        </div>
+    </main>
+
+    </div>
+    <div class="box_principal d-flex justify-content-center align-items-center">
+        
+            <div class="img_box1 hover1-1 justify-content-center align-items-end">
+              <a href="cardapio.html" class="display_none_471"><button class="order-now order_now_small">Ver no cardapio</button></a>
+            </div>
+
+        <div class="d-flex box_02 flex-wrap segundo_box">
+
+            <div class="img_box2 hover1-1 d-flex justify-content-center align-items-end">
+              <a href="cardapio.html"><button class="order-now order_now_smaller">Ver no cardapio</button></a>
+            </div>
+            <div class="img_box3 hover1-1 d-flex justify-content-center align-items-end">
+              <a href="cardapio.html"><button class="order-now order_now_smaller">Ver no cardapio</button></a>
+            </div>
+            <div class="img_box4 hover1-1 d-flex justify-content-center align-items-end">
+              <a href="cardapio.html"><button class="order-now order_now_small">Ver no cardapio</button></a>
+            </div>
+
+        </div>
+    </div>
+
+
+    <section class="section-p d-flex flex-column align-items-center justify-content-center">
+        <div class="p-0"><p>FREE DELIVERY WITH</p></div>
+        <div class="p-1">PIZZA OF THE DAY</div>
+        <div class="p-2"> <p>R$9,99</p> CHEDDAR, FRANGO COM CATUPIRY,
+        M & M</div>
+
+        <div class="">
+          <button class="order-now">Peça Agora</button>
+        </div>
+    </section>
+  
+
+    <h2 class="part_5_h2">Fica ótimo com</h2>
+    <hr class="hr_style">
+
+    <div class="d-flex justify-content-center">
+      <div class="card-deck m-5 card_style">
+        <div class="card">
+          <img class="card-img-top" src="Imagens/pizzaum.jpg" alt="Imagem de capa do card">
+          <div class="card-body">
+            <h5 class="card-title">Título do card</h5>
+            <p class="card-text">Este é um card mais longo com suporte a texto embaixo, que funciona como uma introdução a um conteúdo adicional. Este conteúdo é um pouco maior.</p>
+            <a href="#" class="btn btn-danger">Visitar</a>
+          </div>
+        </div>
+        <div class="card">
+          <img class="card-img-top" src="Imagens/pizzaquatro.jpg" alt="Imagem de capa do card">
+          <div class="card-body">
+            <h5 class="card-title">Título do card</h5>
+            <p class="card-text">Este é um card com suporte a texto embaixo, que funciona como uma introdução a um conteúdo adicional.</p>
+            <a href="#" class="btn btn-danger">Visitar</a>
+          </div>
+        </div>
+        <div class="card">
+          <img class="card-img-top" src="Imagens/pizzadois.jpg" alt="Imagem de capa do card">
+          <div class="card-body">
+            <h5 class="card-title">Título do card</h5>
+            <p class="card-text">Este é um card maior com suporte a texto embaixo, que funciona como uma introdução a um conteúdo adicional. Este card tem o conteúdo ainda maior que o primeiro, para mostrar a altura igual, em ação.</p>
+            <a href="#" class="btn btn-danger ">Visitar</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <section class="section-s d-flex flex-column align-items-center justify-content-center">
+        <div class="p-3">Pepperoni Pizza</div>
+        <div class="p-4">Calabresa, Portuguesa, Milho, Mussarela,
+              Chocolate, Chocolate com Banana</div>
+
+        <button class="select-options">Selecionar Opções</button>      
+    </section>
+
+    <!-- Grupo de lista -->
+    <div class="d-flex flex-column align-items-center">
+      
+      <div class="list-group d-flex flex-row selec_menu" id="minhaLista" role="tablist">
+
+        <a class="list-group-item list-group-item-action btn-danger active  m-1 padding_menu" data-toggle="list" href="#home" role="tab">Pizza</a>
+
+        <a class="list-group-item list-group-item-action btn-danger m-1 padding_menu" data-toggle="list" href="#perfil" role="tab">fritas</a>
+
+        <a class="list-group-item list-group-item-action btn-danger m-1 padding_menu" data-toggle="list" href="#mensagens" role="tab">drinks</a>
+
+        <a class="list-group-item list-group-item-action btn-danger m-1 padding_menu" data-toggle="list" href="#configuracoes" role="tab">combos</a>
+      </div>
+
+
+
+      <!-- Painel de abas -->
+      <div class="tab-content painel-container">
+
+<!-------------------- PIZZA ----------------------------->
+        <div class="tab-pane active text-center" id="home" role="tabpanel">
+          <img src="Imagens/pizzaum.jpg" alt="pizza"> 
+          <img src="Imagens/pizzadois.jpg" alt="pizza">
+          <img src="Imagens/pizzaquatro.jpg" alt="">
+        </div>
+<!------------------- FRITAS ----------------------------->
+        <div class="tab-pane text-center" id="perfil" role="tabpanel">
+          <img src="Imagens/batatafritapepper.jpg" alt="fritas">
+          <img src="Imagens/batatafritaquatro.jpg" alt="Batata">
+          <img src="Imagens/batatafritatres.jpg" alt="">
+        </div>
+<!------------------- DRINKS ----------------------------->
+        <div class="tab-pane text-center" id="mensagens" role="tabpanel">
+          <img src="Imagens/coca-cola.jpg" alt="drink">
+          <img src="Imagens/suco.jpg" alt="">
+          <img src="Imagens/fanta.jpg" alt="">
+        </div>
+<!------------------- COMBOS ----------------------------->
+        <div class="tab-pane text-center" id="configuracoes" role="tabpanel">
+          <img src="Imagens/tudo].jpg" alt="combo">
+          <img src="../cardapio/Imagens/combo-burguer.jpg.opdownload" alt="">
+        </div>
+      </div>
+
+    </div>
+
+<!-- CARRINHO DE COMPRAS -->
+
+<!-- FIM DO CARRINHO DE COMPRAS -->
+
+  <footer class="d-flex justify-content-center align-items-center flex-column">
+
+    <div class="footer_sociais"> 
+      <a href="#" class="text-decoration-none">
+        <img src="Imagens/white-instagram.png" alt="instagram" class="icons_footer_social">
+      </a>
+      <a href="#" class="text-decoration-none">
+        <img src="Imagens/whatsapp_png.png.opdownload" alt="whatsapp" class="icons_footer_social">
+      </a>
+      <a href="#" class="text-decoration-none"> <img src="Imagens/twitter-icon-svg-28.jpg" alt="twitter" class="icons_footer_social">
+      </a>
+      <a href="#" class="text-decoration-none">
+        <img src="Imagens/telefone_branco.png" alt="Telefone" class="icons_footer_social">
+      </a>
+      <img src="" alt="" class="icons_footer_social">
+    </div>
+    <p class="text-white p_footer">Fast pizza</p>
+    <a href="https://www.google.com/maps/place/Valparaíso+de+Goiás,+GO/@-16.0898164,-48.0200443,13z/data=!3m1!4b1!4m5!3m4!1s0x9359847212701563:0x4215e06987627415!8m2!3d-16.0753576!4d-47.9860661" class="find_me" target="_blank">Como chegar
+    </a>
+
+    <div class="carrinho">
+              
+      <a href="cart.html"><img src="icones/carrinho_compras_branco.png" alt="feedback" id="btn_feedback"></a>
+      
+  </div>
+  <div class="cart text-right">
+    <a href="#"><span class="text-white num_cart">0</span>
+        </a>
+  </div>
+  </footer>
+    
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js" integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2" crossorigin="anonymous"></script>
+    -->
+    <script src="main.js"></script>
+    <script>
+      $(function () {
+        $('[data-toggle="popover"]').popover()
+      })
+
+
+    </script>
+</body>
+</html>
