@@ -1,2 +1,2 @@
-# Fast-pizza
-Site feito para delivery de pizzaria.
+# [Fastpizza](https://fastpizza.netlify.app)
+Site feito para delivery de pizzaria. 
